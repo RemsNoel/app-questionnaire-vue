@@ -5,61 +5,53 @@
   </div> -->
   <div class="questionnaire">
   	<h1>App Questionnaire</h1>
-  		<div class="wrapper">
-	  		<div class="box a">Veuillez saisir Votre Prénom/Nom et le nom de votre Société</div>
-	  		<div class="box b">B</div>
-	  		<div class="box c">C</div>
-	  		<div class="box d">D</div>
-		</div>
-  	<Question msg="Envoi de message vers Question"/>
+  		
 
 <b-form @submit="onSubmit" @reset="onReset" v-if="show">
-      <b-form-group
+	<div class="wrapper">
+	  		<div class="box a">Veuillez saisir Votre Prénom/Nom et le nom de votre Société</div>
+	  		<div class="box b">
+	  			<b-form-group
         id="input-group-1"
-        label="Email address:"
-        label-for="input-1"
-        description="We'll never share your email with anyone else."
-      >
-        <b-form-input
+        label="Prénom:"
+        label-for="input-1" class="cellule">
+        <b-form-input class="cellule"
           id="input-1"
-          v-model="form.email"
-          type="email"
+          v-model="form.firstName"
           required
-          placeholder="Enter email"
+          placeholder="Enter FirsName"
         ></b-form-input>
       </b-form-group>
-
-      <b-form-group id="input-group-2" label="Your Name:" label-for="input-2">
+  </div>
+	  		<div class="box c">
+	  			<b-form-group id="input-group-2" label="Nom:" label-for="input-2" class="cellule">
         <b-form-input
           id="input-2"
           v-model="form.name"
           required
-          placeholder="Enter name"
+          placeholder="Enter Name"
         ></b-form-input>
       </b-form-group>
-
-      <b-form-group id="input-group-3" label="Food:" label-for="input-3">
-        <b-form-select
+  </div>
+	  		<div class="box d">
+	  			<b-form-group id="input-group-3" label="Nom Société:" label-for="input-3" class="cellule">
+        <b-form-input 
           id="input-3"
           v-model="form.food"
-          :options="foods"
           required
-        ></b-form-select>
+          placeholder="Enter Society">          	
+          </b-form-input>
       </b-form-group>
-
-      <b-form-group id="input-group-4">
-        <b-form-checkbox-group v-model="form.checked" id="checkboxes-4">
-          <b-form-checkbox value="me">Check me out</b-form-checkbox>
-          <b-form-checkbox value="that">Check that out</b-form-checkbox>
-        </b-form-checkbox-group>
-      </b-form-group>
+  </div>
+		</div>
 
       <b-button type="submit" variant="primary">Submit</b-button>
       <b-button type="reset" variant="danger">Reset</b-button>
     </b-form>
-    <b-card class="mt-3" header="Form Data Result">
+    <!-- <b-card class="mt-3" header="Form Data Result">
       <pre class="m-0">{{ form }}</pre>
-    </b-card>
+    </b-card> -->
+  	<Question msg="Envoi de message vers Question"/>
   </div>
 </template>
 
@@ -81,7 +73,6 @@ export default {
           food: null,
           checked: []
         },
-        foods: [{ text: 'Select One', value: null }, 'Carrots', 'Beans', 'Tomatoes', 'Corn'],
         show: true
       }
     },
@@ -107,25 +98,31 @@ export default {
 }
 </script>
 <style lang="scss">	
-	.wrapper {
+		.wrapper {
 		  display: grid;
 		  grid-template-columns: 1fr 1fr 1fr;
-		  grid-template-rows: 1fr 1fr;
+		  grid-template-rows: 1fr 2fr;
 		  grid-gap: 5px;
 		  background-color: #fff;
 		  color: #444;
 		  margin: 5px;
 		}
 
+		.cellule {
+			width: 85%;
+			margin:auto;
+		}
+
 		.box {
-		  background-color: #444;
-		  color: #fff;
+		  background-color: #f4f5f7;
+		  color: #000;
 		  border-radius: 5px;
 		  /*padding: 20px;*/
 		  font-size: 150%;
 		}
 
 		.a {
+			background-color: #007bff;
 	        grid-column-start: 1;
 	        grid-column-end: 4;
 	        grid-row-start: 1;
