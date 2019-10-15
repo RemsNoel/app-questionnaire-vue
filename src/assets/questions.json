@@ -1,0 +1,10 @@
+[
+	{
+		"ennoncer" : "Qui est le plus fort entre l'Hippopotame et l'Éléphant?",
+		"reponses":[ "L'Hippopotame", "L'Éléphant", "Le Rhinocéros"]
+	},
+	{
+		"ennoncer" : "Quelle est la formule pour rentrer dans les mines de la Moira?",
+		"reponses":[ "S'il vous plait?", "Bella", "On a un nain avec nous!","Mella"]
+	}
+]
