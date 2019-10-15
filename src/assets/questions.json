@@ -6,5 +6,45 @@
 	{
 		"ennoncer" : "Quelle est la formule pour rentrer dans les mines de la Moira?",
 		"reponses":[ "S'il vous plait?", "Bella", "On a un nain avec nous!","Mella"]
+	},
+	{
+		"ennoncer" : "Michel c'est le Brésil pour...",
+		"reponses":[ "Changer les vélux", "Danser la Samba"]
+	},
+	{
+		"ennoncer" : "Arthour ?",
+		"reponses":[ "Couiyere!", "Plan Epargne Logement", "Colmater une fissure dans un muret"]
+	},
+	{
+		"ennoncer" : "Quelle est la couleur Shiny d'un Ponyta?",
+		"reponses":[ "Rouge", "Jaune", "Bleu", "Vert"]
+	},
+	{
+		"ennoncer" : "Quel est le nom du premier des mort dans Dark Soul ?",
+		"reponses":[ "Arthour", "Michel", "Neeto", "Gardien des lames", "Arthorias"]
+	},
+	{
+		"ennoncer" : "Darude Sandstorm",
+		"reponses":[ "Dududududu dududududu", "Dudududu dududu", "C'est la Samba"]
+	},
+	{
+		"ennoncer" : "Quel est le chiffre interdit dans le Disque Monde?",
+		"reponses":[ "7", "13", "8", "21"]
+	},
+	{
+		"ennoncer" : "La phrase fétiche de Barney Stinson",
+		"reponses":[ "Challenge accepté!", "En avant toute", "Pierre qui roule n'amasse pas mousse", "Alons-y Allonso"]
+	},
+	{
+		"ennoncer" : "Bas Bravo Neils!",
+		"reponses":[ "J'ai de neige partout", "Super pour l'appareil photo, génial", "tu as renversé une petite"]
+	},
+	{
+		"ennoncer" : "Un canoë ...",
+		"reponses":[ "En sapin", "En peau de saucisson", "En Alluminium", "En érable"]
+	},
+	{
+		"ennoncer" : "Billie Jean",
+		"reponses":[ "Micheal Jackson", "Gaston Tremblé", "Ernest Sproutge"]
 	}
 ]
