@@ -1,6 +1,6 @@
 <template>
   <div class="Questionnaire">
-  	<pre>{{formuser}}</pre>
+  	<pre>{{$route.params}}</pre>
 
   <Question/>
   </div>
@@ -21,15 +21,14 @@ export default {
   data () {
   	return {
   		formuser: {
-  			firstName: this.firstName,
-  			name: this.name,
-  			society: this.society,
+  			firstName: '',
+  			name: '',
+  			society: '',
   		}
   	}
   },
   components: {
-  	Question
-  },
-  
+	Question
+  }
 }
 </script>
