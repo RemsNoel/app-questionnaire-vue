@@ -73,7 +73,7 @@ export default {
     methods: {
       onSubmit(evt) {
         evt.preventDefault()
-        this.$router.push({ name: 'questionnaire'})
+        this.$router.push({ name: 'questionnaire', params: this.form})
         // alert(JSON.stringify(this.form))
       },
       onReset(evt) {

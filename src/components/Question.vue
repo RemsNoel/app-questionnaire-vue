@@ -7,7 +7,7 @@
   	<h2>Questionnaire</h2>
   	<!-- <p>{{ form }}</p> -->
   	<div>
-    <b-form-group :label="questions[i].ennoncer">    	
+    <b-form-group :label="questions[i].ennoncer" >    	
       <b-form-radio  v-for="reponse in questions[i].reponses" v-model="selected" name="some-radios" v-bind:value="reponse">{{reponse}}</b-form-radio>
       </b-form-radio-group>
     </b-form-group>

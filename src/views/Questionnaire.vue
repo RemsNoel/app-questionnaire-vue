@@ -1,9 +1,9 @@
 <template>
-  <!-- <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div> -->
+  <div class="Questionnaire">
+  	<pre>{{formuser}}</pre>
+
   <Question/>
+  </div>
 </template>
 
 <script>
@@ -12,7 +12,21 @@
 import Question from '@/components/Question.vue'
 
 export default {
-  name: 'questionnaire',
+  name: 'Questionnaire',
+  props:{
+          firstName: String,
+          name: String,
+          society: String,
+  },
+  data () {
+  	return {
+  		formuser: {
+  			firstName: this.firstName,
+  			name: this.name,
+  			society: this.society,
+  		}
+  	}
+  },
   components: {
   	Question
   },
