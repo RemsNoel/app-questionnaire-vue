@@ -1,50 +1,62 @@
 [
 	{
 		"ennoncer" : "Qui est le plus fort entre l'Hippopotame et l'Éléphant?",
-		"reponses":[ "L'Hippopotame", "L'Éléphant", "Le Rhinocéros"]
+		"reponses":[ "L'Hippopotame", "L'Éléphant", "Le Rhinocéros"],
+		"correction" : "Le Rhinocéros"
 	},
 	{
 		"ennoncer" : "Quelle est la formule pour rentrer dans les mines de la Moira?",
-		"reponses":[ "S'il vous plait?", "Bella", "On a un nain avec nous!","Mella"]
+		"reponses":[ "S'il vous plait?", "Bella", "On a un nain avec nous!","Mella"],
+		"correction" : "Mella"
 	},
 	{
 		"ennoncer" : "Michel c'est le Brésil pour...",
-		"reponses":[ "Changer les vélux", "Danser la Samba"]
+		"reponses":[ "Faire la fiesta", "Danser la Samba"],
+		"correction" : "Danser la Samba"
 	},
 	{
 		"ennoncer" : "Arthour ?",
-		"reponses":[ "Couiyere!", "Plan Epargne Logement", "Colmater une fissure dans un muret"]
+		"reponses":[ "Couiyere!", "Plan Epargne Logement", "Colmater une fissure dans un muret"],
+		"correction" : "Couiyere!"
 	},
 	{
 		"ennoncer" : "Quelle est la couleur Shiny d'un Ponyta?",
-		"reponses":[ "Rouge", "Jaune", "Bleu", "Vert"]
+		"reponses":[ "Rouge", "Jaune", "Bleu", "Vert"],
+		"correction" : "Bleu"
 	},
 	{
 		"ennoncer" : "Quel est le nom du premier des mort dans Dark Soul ?",
-		"reponses":[ "Arthour", "Michel", "Neeto", "Gardien des lames", "Arthorias"]
+		"reponses":[ "Arthour", "Michel", "Neeto", "Gardien des lames", "Arthorias"],
+		"correction" : "Neeto"
 	},
 	{
 		"ennoncer" : "Darude Sandstorm",
-		"reponses":[ "Dududududu dududududu", "Dudududu dududu", "C'est la Samba"]
+		"reponses":[ "Dududududu dududududu", "Dudududu dududu", "C'est la Samba"],
+		"correction" : "Dududududu dududududu"
 	},
 	{
 		"ennoncer" : "Quel est le chiffre interdit dans le Disque Monde?",
-		"reponses":[ "7", "13", "8", "21"]
+		"reponses":[ "7", "13", "8", "21"],
+		"correction" : "8"
 	},
 	{
 		"ennoncer" : "La phrase fétiche de Barney Stinson",
-		"reponses":[ "Challenge accepté!", "En avant toute", "Pierre qui roule n'amasse pas mousse", "Alons-y Allonso"]
+		"reponses":[ "Challenge accepté!", "En avant toute", "Pierre qui roule n'amasse pas mousse", "Alons-y Allonso"],
+		"correction" : "Challenge accepté!"
 	},
 	{
 		"ennoncer" : "Bas Bravo Neils!",
-		"reponses":[ "J'ai de neige partout", "Super pour l'appareil photo, génial", "tu as renversé une petite"]
+		"reponses":[ "J'ai de neige partout", "Super pour l'appareil photo, génial", "tu as renversé une petite"],
+		"correction" : "Super pour l'appareil photo, génial"
 	},
 	{
 		"ennoncer" : "Un canoë ...",
-		"reponses":[ "En sapin", "En peau de saucisson", "En Alluminium", "En érable"]
+		"reponses":[ "En sapin", "En peau de saucisson", "En Alluminium", "En érable"],
+		"correction" : "En peau de saucisson"
 	},
 	{
 		"ennoncer" : "Billie Jean",
-		"reponses":[ "Micheal Jackson", "Gaston Tremblé", "Ernest Sproutge"]
+		"reponses":[ "Micheal Jackson", "Gaston Tremblé", "Ernest Sproutge"],
+		"correction" : "Micheal Jackson"
 	}
 ]

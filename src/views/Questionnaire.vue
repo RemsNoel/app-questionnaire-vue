@@ -1,7 +1,5 @@
 <template>
   <div class="Questionnaire">
-  	<pre>{{$route.params}}</pre>
-
   <Question/>
   </div>
 </template>
@@ -13,11 +11,6 @@ import Question from '@/components/Question.vue'
 
 export default {
   name: 'Questionnaire',
-  props:{
-          firstName: String,
-          name: String,
-          society: String,
-  },
   data () {
   	return {
   		formuser: {
