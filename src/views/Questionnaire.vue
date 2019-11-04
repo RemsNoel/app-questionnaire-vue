@@ -11,15 +11,6 @@ import Question from '@/components/Question.vue'
 
 export default {
   name: 'Questionnaire',
-  data () {
-  	return {
-  		formuser: {
-  			firstName: '',
-  			name: '',
-  			society: '',
-  		}
-  	}
-  },
   components: {
 	Question
   }

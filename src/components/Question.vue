@@ -4,7 +4,7 @@
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div> -->
   <div class="Question">
-  	<pre>{{$route.params}}</pre>
+  	<!-- <pre>{{$route.params}}</pre> -->
   	<h2>Questionnaire</h2>
   	<!-- <p>{{ form }}</p> -->
   	<div>
@@ -19,7 +19,7 @@
     <b-button type="submit" variant="primary" @click="onSubmit">Question Suivante</b-button>
   </div>
   <!-- <h1> Score = {{score}}</h1> -->
-  <!-- <pre>{{questions[i]}}</pre> -->
+  <!-- <pre>{{form}}</pre> -->
   </div>
 </template>
 
@@ -34,7 +34,12 @@ export default {
   		selected :'',
   		questions : {},
   		i:0,
-  		score:0,
+  		form: {
+          firstName: this.$route.params.firstName,
+          name: this.$route.params.name,
+          society: this.$route.params.society,
+  		  score:0,
+        },
   	}
   },
   created: function(){
@@ -50,13 +55,13 @@ export default {
   	onSubmit(evt) {
   			// console.log(this.questions[this.i]);
   		if ( this.selected == this.questions[this.i].correction) {
-  			this.score++;
+  			this.form.score++;
   		}
   		if (this.selected != '') {
   			if (this.i < 11) {
         	this.i++
     		} else {
-    			
+    			this.$router.push({ name: 'resultat', params: this.form})
     		}
     	}
     	this.selected='';
