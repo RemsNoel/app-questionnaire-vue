@@ -5,7 +5,7 @@
   	<h1>App Questionnaire</h1>
   		
 
-<b-form @submit="onSubmit" @reset="onReset" v-if="show">
+<b-form @submit="rn_onSubmit" @reset="rn_onReset" v-if="show">
 	<div class="wrapper">
 	  		<div class="box a">Veuillez saisir Votre Prénom/Nom et le nom de votre Société</div>
 	  		<div class="box b">
@@ -15,9 +15,9 @@
         label-for="input-1" class="cellule">
         <b-form-input class="cellule"
           id="input-1"
-          v-model="form.firstName"
+          v-model="form.rn_firstName"
           required
-          placeholder="Enter FirsName"
+          placeholder="Enter FirstName"
         ></b-form-input>
       </b-form-group>
   </div>
@@ -25,7 +25,7 @@
 	  			<b-form-group id="input-group-2" label="Nom:" label-for="input-2" class="cellule">
         <b-form-input
           id="input-2"
-          v-model="form.name"
+          v-model="form.rn_name"
           required
           placeholder="Enter Name"
         ></b-form-input>
@@ -35,7 +35,7 @@
 	  			<b-form-group id="input-group-3" label="Nom Société:" label-for="input-3" class="cellule">
         <b-form-input 
           id="input-3"
-          v-model="form.society"
+          v-model="form.rn_society"
           required
           placeholder="Enter Society">          	
           </b-form-input>
@@ -44,7 +44,7 @@
 		</div>
 
       <b-button type="submit" variant="primary">Submit</b-button>
-      <b-button type="reset" variant="danger" class="buttonreset">Reset</b-button>
+      <b-button type="reset" variant="danger" class="buttrn_onreset">Reset</b-button>
     </b-form>
     <!-- <b-card class="mt-3" header="Form Data Result">
       <pre class="m-0">{{ form }}</pre>
@@ -63,25 +63,25 @@ export default {
   data() {
       return {
         form: {
-          firstName: '',
-          name: '',
-          society: '',
+          rn_firstName: '',
+          rn_name: '',
+          rn_society: '',
         },
         show: true
       }
     },
     methods: {
-      onSubmit(evt) {
+      rn_onSubmit(evt) {
         evt.preventDefault()
         this.$router.push({ name: 'questionnaire', params: this.form})
         // alert(JSON.stringify(this.form))
       },
-      onReset(evt) {
+      rn_onReset(evt) {
         evt.preventDefault()
         // Reset our form values
-        this.form.firstName = ''
-        this.form.name = ''
-        this.form.society = ''
+        this.form.rn_firstName = ''
+        this.form.rn_name = ''
+        this.form.rn_society = ''
         // Trick to reset/clear native browser form validation state
         this.show = false
         this.$nextTick(() => {
@@ -144,7 +144,7 @@ export default {
 	        grid-row-end: 2;
 	    }
 
-	    .buttonreset {
+	    .buttrn_onreset {
 	    	margin-left : 5px;
 	    }
 </style>

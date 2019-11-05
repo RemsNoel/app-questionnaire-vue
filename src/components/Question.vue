@@ -10,15 +10,15 @@
   	<div>
     <b-form-group :label="questions[i].ennoncer" >    	
 
-      <b-form-radio  v-for="reponse in questions[i].reponses" v-model="selected" name="some-radios" v-bind:value="reponse">{{reponse}}</b-form-radio>
+      <b-form-radio  v-for="reponse in questions[i].reponses" v-model="rn_selected" name="some-radios" v-bind:value="reponse">{{reponse}}</b-form-radio>
       </b-form-radio-group>
     </b-form-group>
     
 
-    <div class="mt-3">Selected: <strong>{{ selected }}</strong></div>
-    <b-button type="submit" variant="primary" @click="onSubmit">Question Suivante</b-button>
+    <div class="mt-3">Selected: <strong>{{ rn_selected }}</strong></div>
+    <b-button type="submit" variant="primary" @click="rn_onSubmit">Question Suivante</b-button>
   </div>
-  <!-- <h1> Score = {{score}}</h1> -->
+  <!-- <h1> Score = {{rn_score}}</h1> -->
   <!-- <pre>{{form}}</pre> -->
   </div>
 </template>
@@ -31,14 +31,14 @@ export default {
   name: 'Question',
   data() {
   	return {
-  		selected :'',
+  		rn_selected :'',
   		questions : {},
   		i:0,
   		form: {
-          firstName: this.$route.params.firstName,
-          name: this.$route.params.name,
-          society: this.$route.params.society,
-  		  score:0,
+          rn_firstName: this.$route.params.rn_firstName,
+          rn_name: this.$route.params.rn_name,
+          rn_society: this.$route.params.rn_society,
+  		  rn_score:0,
         },
   	}
   },
@@ -52,19 +52,19 @@ export default {
 
   	// console.log(this.questions)
   	},
-  	onSubmit(evt) {
+  	rn_onSubmit(evt) {
   			// console.log(this.questions[this.i]);
-  		if ( this.selected == this.questions[this.i].correction) {
-  			this.form.score++;
+  		if ( this.rn_selected == this.questions[this.i].correction) {
+  			this.form.rn_score++;
   		}
-  		if (this.selected != '') {
+  		if (this.rn_selected != '') {
   			if (this.i < 11) {
         	this.i++
     		} else {
     			this.$router.push({ name: 'resultat', params: this.form})
     		}
     	}
-    	this.selected='';
+    	this.rn_selected='';
         // alert(JSON.stringify(this.form))
      },
   }
