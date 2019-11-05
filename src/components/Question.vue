@@ -4,22 +4,24 @@
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div> -->
   <div class="Question">
+  	<div classe="wrapper">
   	<!-- <pre>{{$route.params}}</pre> -->
   	<h2>Questionnaire</h2>
   	<!-- <p>{{ form }}</p> -->
-  	<div>
-    <b-form-group :label="questions[i].ennoncer" >    	
+  	<div class="box f">
+    	<b-form-group :label="questions[i].ennoncer" >    	
 
-      <b-form-radio  v-for="reponse in questions[i].reponses" v-model="rn_selected" name="some-radios" v-bind:value="reponse">{{reponse}}</b-form-radio>
-      </b-form-radio-group>
-    </b-form-group>
+      	<b-form-radio  v-for="reponse in questions[i].reponses" v-model="rn_selected" name="some-radios" v-bind:value="reponse">{{reponse}}</b-form-radio>
+      	</b-form-radio-group>
     
 
-    <div class="mt-3">Selected: <strong>{{ rn_selected }}</strong></div>
-    <b-button type="submit" variant="primary" @click="rn_onSubmit">Question Suivante</b-button>
+    	<div class="mt-3">Selected: <strong>{{ rn_selected }}</strong></div>
+    	<b-button type="submit" variant="primary" @click="rn_onSubmit">Question Suivante</b-button>
+    </b-form-group>
   </div>
   <!-- <h1> Score = {{rn_score}}</h1> -->
   <!-- <pre>{{form}}</pre> -->
+  </div>
   </div>
 </template>
 

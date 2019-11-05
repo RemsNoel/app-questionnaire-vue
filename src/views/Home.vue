@@ -91,13 +91,15 @@ export default {
     }
 }
 </script>
-<style lang="scss">	
+<style lang="scss">
+	body{
+		background-image:url(../assets/tunnel.jpg);
+	}
 		.wrapper {
 		  display: grid;
-		  grid-template-columns: 1fr 1fr 1fr;
+		  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 		  grid-template-rows: 1fr 2fr;
 		  grid-gap: 5px;
-		  background-color: #fff;
 		  color: #444;
 		  margin: 5px;
 		}
@@ -116,31 +118,37 @@ export default {
 		}
 
 		.a {
-			background-color: #f4f5f7;
-	        grid-column-start: 1;
-	        grid-column-end: 4;
+	        grid-column-start: 2;
+	        grid-column-end: 5;
 	        grid-row-start: 1;
 	        grid-row-end: 2;
 	    }
 
 		.b {
-	        grid-column-start: 1;
-	        grid-column-end: 2;
-	        grid-row-start: 2;
-	        grid-row-end: 2;
-	    }
-
-		.c {
 	        grid-column-start: 2;
 	        grid-column-end: 3;
 	        grid-row-start: 2;
 	        grid-row-end: 2;
 	    }
 
-		.d {
+		.c {
 	        grid-column-start: 3;
 	        grid-column-end: 4;
 	        grid-row-start: 2;
+	        grid-row-end: 2;
+	    }
+
+		.d {
+	        grid-column-start: 4;
+	        grid-column-end: 5;
+	        grid-row-start: 2;
+	        grid-row-end: 2;
+	    }
+
+	    .f {
+	        grid-column-start: 2;
+	        grid-column-end: 5;
+	        grid-row-start: 1;
 	        grid-row-end: 2;
 	    }
 
