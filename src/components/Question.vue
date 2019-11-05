@@ -8,7 +8,7 @@
   	<!-- <pre>{{$route.params}}</pre> -->
   	<h2>Questionnaire</h2>
   	<!-- <p>{{ form }}</p> -->
-  	<div class="box f">
+  	<div class="box a">
     	<b-form-group :label="questions[i].ennoncer" >    	
 
       	<b-form-radio  v-for="reponse in questions[i].reponses" v-model="rn_selected" name="some-radios" v-bind:value="reponse">{{reponse}}</b-form-radio>

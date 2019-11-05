@@ -2,8 +2,9 @@
   <div class="home">
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
     <div>
+    <div class="box">
   	<h1>App Questionnaire</h1>
-  		
+  	</div>
 
 <b-form @submit="rn_onSubmit" @reset="rn_onReset" v-if="show">
 	<div class="wrapper">
@@ -93,11 +94,12 @@ export default {
 </script>
 <style lang="scss">
 	body{
-		background-image:url(../assets/tunnel.jpg);
+		background-image:url(../assets/tunnel.jpg);		
+  		background-position: center;
 	}
 		.wrapper {
 		  display: grid;
-		  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 		  grid-template-rows: 1fr 2fr;
 		  grid-gap: 5px;
 		  color: #444;
