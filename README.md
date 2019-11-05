@@ -1,6 +1,6 @@
 # app-questionnaire-vue
 
-## Adresse de deployement
+## Adresse de déploiement
 https://remsnoel.github.io/
 
 ## Project setup
