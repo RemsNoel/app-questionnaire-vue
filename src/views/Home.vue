@@ -18,7 +18,7 @@
           id="input-1"
           v-model="form.rn_firstName"
           required
-          placeholder="Enter FirstName"
+          placeholder="Prénom"
         ></b-form-input>
       </b-form-group>
   </div>
@@ -29,18 +29,18 @@
           id="input-2"
           v-model="form.rn_name"
           required
-          placeholder="Enter Name"
+          placeholder="Nom"
         ></b-form-input>
       </b-form-group>
   </div>
 	  		<div class="box d">
-	  			<b-form-group id="input-group-3" label="Nom Société:" label-for="input-3" class="cellule">
+	  			<b-form-group id="input-group-3" label="Société:" label-for="input-3" class="cellule">
 	  	<!-- input de la société -->
         <b-form-input 
           id="input-3"
           v-model="form.rn_society"
           required
-          placeholder="Enter Society">          	
+          placeholder="Société">          	
           </b-form-input>
       </b-form-group>
   </div>

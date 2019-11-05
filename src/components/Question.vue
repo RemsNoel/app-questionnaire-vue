@@ -4,7 +4,7 @@
   	<h2>Questionnaire</h2>
   	<div class="box a">
   		<!-- affichage de l'enoncé -->
-    	<b-form-group :label="questions[i].ennoncer" >    	
+    	<b-form-group :label="questions[i].enoncer" >    	
     	<!-- affichage des différentes réponses proposés -->
       	<b-form-radio  v-for="reponse in questions[i].reponses" v-model="rn_selected" name="some-radios" v-bind:value="reponse">{{reponse}}</b-form-radio>
       	</b-form-radio-group>
@@ -66,6 +66,7 @@ export default {
     			this.$router.push({ name: 'resultat', params: this.form})
     		}
     	}
+    	// on remet la selection a vide pour la question suivante
     	this.rn_selected='';
      },
   }
